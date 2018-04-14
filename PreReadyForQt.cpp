@@ -1,9 +1,9 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-using namespace std;
-class NumberSearch
+#include <iostream> //for std::endl, std::cout, std::cin
+#include <string>  //for std::string::substr
+#include <vector> //for std::vector
+#include <algorithm> //for std::string::find
+using namespace std; //defining std in namespace
+class NumberSearch //declared class
 {
 	private:
 		string UserNumber;
@@ -71,21 +71,24 @@ class NumberSearch
 
 int main(int argc, char const *argv[])
 {
-NumberSearch find;
-find.GetNum();
+NumberSearch find; //Declared find as an Object
+find.GetNum();		//Calling GetNum(),Process() & Algorithm()	
 find.Process();
 find.Algorithm();
-return 0;
+return 0;		
 }
 
 void NumberSearch :: GetNum()
-{
+{	
 	cin>>UserNumber;
+	//Get an input from user!
 }
 
 void NumberSearch :: Algorithm()
 {
-
+		// Algorithm that finds in if, else if and else loops
+		// It uses std::find from <algorithm> to compare the value between
+		// two ranges of a same <vector> type.
 	if(find(Ncell.begin(), Ncell.end(), SearchingNumber) != Ncell.end())
 		cout << "+" << UserNumber <<" is a Ncell number!"<<endl;
 	else if(find(Landline.begin(), Landline.end(), SearchingNumber) != Landline.end())
@@ -103,5 +106,5 @@ void NumberSearch :: Algorithm()
 }
 void NumberSearch :: Process()
 {
-	SearchingNumber = UserNumber.substr(0,7);
+	SearchingNumber = UserNumber.substr(0,7); //get the number and cut the numbers so that it could match with vectors elements
 }
