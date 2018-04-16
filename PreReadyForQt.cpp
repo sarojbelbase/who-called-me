@@ -2,16 +2,26 @@
 #include <string>  //for std::string::substr
 #include <vector> //for std::vector
 #include <algorithm> //for std::string::find
+#include <fstream>  //for std::ofstream & std::ifstream
+#include <conio.h> //for std::getche, std::system
 using namespace std; //defining std in namespace
 class NumberSearch //declared class
 {
 	private:
 		string UserNumber;
 		string SearchingNumber;
+		char ch;
+		fstream fp;
+		ofstream ofp;
+		string line;
 	public: 
 		void GetNum();
 		void Algorithm();
 		void Process();
+		void CreateMenu();
+		void WriteNumber();
+		void PrintNumber(); 
+		void AboutMe();
 		 vector <string> Ncell
 {
 	"9779800","9779801","9779802","9779803","9779804",
@@ -71,15 +81,23 @@ class NumberSearch //declared class
 
 int main(int argc, char const *argv[])
 {
-NumberSearch find; //Declared find as an Object
-find.GetNum();		//Calling GetNum(),Process() & Algorithm()	
+NumberSearch find; 
+//Declared find as an Object
+find.CreateMenu();
+find.GetNum();
+find.WriteNumber();
 find.Process();
 find.Algorithm();
+find.PrintNumber();
+find.AboutMe();
+//Calling these all functions under public class of NumberSearch.
 return 0;		
 }
 
 void NumberSearch :: GetNum()
 {	
+	cout<<"\n\n\n\tEnter the number you want to search:" << " + " ;
+	//Along with tabs and break lines ask the questions under the menu no.1
 	cin>>UserNumber;
 	//Get an input from user!
 }
@@ -90,21 +108,94 @@ void NumberSearch :: Algorithm()
 		// It uses std::find from <algorithm> to compare the value between
 		// two ranges of a same <vector> type.
 	if(find(Ncell.begin(), Ncell.end(), SearchingNumber) != Ncell.end())
-		cout << "+" << UserNumber <<" is a Ncell number!"<<endl;
+		cout << "\n\n\n\t+" << UserNumber <<" is a Ncell number!\n\n\n\t"<<endl;
 	else if(find(Landline.begin(), Landline.end(), SearchingNumber) != Landline.end())
-   		cout << UserNumber << " is a Landline Number!" << endl;
+   		cout << UserNumber << "\n\n\n\t is a Landline Number!\n\n\n\t" << endl;
 	else if(find(Namaste.begin(), Namaste.end(), SearchingNumber) != Namaste.end())
-   		cout << "+" << UserNumber << " is a Namaste Number!" << endl;
+   		cout << "\n\n\n\t+" << UserNumber << " is a Namaste Number!\n\n\n\t" << endl;
 	else if(find(SmartCell.begin(), SmartCell.end(), SearchingNumber) != SmartCell.end())
-   		cout << "+" << UserNumber << " is a SmartCell Number!" ;
+   		cout << "\n\n\n\t+" << UserNumber << " is a SmartCell Number!\n\n\n\t" ;
 	else if(find(UTL.begin(), UTL.end(), SearchingNumber) != UTL.end())
-   		cout << "+" << UserNumber << " is a UTL Number!" ;
+   		cout << "\n\n\n\t+" << UserNumber << " is a UTL Number!\n\n\n\t" ;
 	else if(find(HelloNepal.begin(), HelloNepal.end(), SearchingNumber) != HelloNepal.end())
-   		cout << "+" << UserNumber << " is a HelloNepal Number!" ;
+   		cout << "\n\n\n\t+" << UserNumber << " is a HelloNepal Number!\n\n\n\t" ;
 	else
- 		cout<<"Sorry, we don't have this number in our database!"<< endl;
+ 		cout<<"\n\n\n\tSorry, we don't have this number in our database!\n\n\n\t"<< endl;
 }
 void NumberSearch :: Process()
 {
-	SearchingNumber = UserNumber.substr(0,7); //get the number and cut the numbers so that it could match with vectors elements
+	SearchingNumber = UserNumber.substr(0,7); 
+	//get the number and cut the numbers so that it could match with vectors elements
 }
+void NumberSearch :: CreateMenu()
+{
+	//Creates a do while loop inside a switch i.e. nested switch 
+	do
+    {
+        system("cls");
+        cout << "\n\n\n\tMAIN MENU";
+        cout << "\n\n\t01. Search a number";
+        cout << "\n\n\t02. List Searched Numbers";
+        cout << "\n\n\t03. About Me";
+        cout << "\n\n\t04. Exit";
+        cout << "\n\n\tSelect Your Option Between 1 to 3: ";
+        ch=getche();
+        //now it switches characters gotten from ch
+        
+        switch(ch)
+        {
+       case '1':
+       		system("cls");
+            		GetNum();
+		WriteNumber();	
+		Process();
+		Algorithm();
+		system("pause");
+            		break;
+       case '2':
+                	PrintNumber();
+                	system("pause");
+                 	break;
+        case '3':
+                	AboutMe();
+                	system("pause");
+                 	break;
+       default :
+            		exit(0);
+        }
+    }
+      while(ch!='4');
+  }
+
+void NumberSearch :: WriteNumber()
+  {
+        ofp.open("F:/Codings/ThirdSem/NumberSheet.txt");  //opens file for writing
+        system("cls"); //clears the system
+       ofp.write((char*)&(UserNumber),sizeof(UserNumber)); //specify what to write and what of length 
+       ofp.flush(); //it will later flush all the stream
+       ofp.close(); //it closes the writing stream
+}
+void NumberSearch :: PrintNumber() 
+{
+    system("cls"); //it clears the screen
+    fp.open("F:/Codings/ThirdSem/NumberSheet.txt",ios::in); //It opens the file specified in the following
+    if(!fp) 
+    	{
+        		cout << "\n\n\n\t ERROR!!! File couldn't be opened! \n\n\n\t"<< endl; //Error specified
+   	 }
+    else
+    	{
+    while (getline(fp,line)) //it gets the line by line from fp stream
+    		{
+    		cout << "\n\n\n\t" << line << endl; //tab and break line along with the data got from UserNum	
+    		}
+   	}
+	fp.close(); //closes the file
+}
+void NumberSearch :: AboutMe()
+{
+	//Prints about me 
+	cout << "\n\n\n\t Program: NumberChecker 1.1 \n\t Developer: Siddharth Belbase \n\t siddharthbelbase@gmail.com"<< "\n\n\t";
+}
+//THANKYOU FOR APPROVING THIS PROGRAM, MADE WITH LOVE IN NEPAL, COPYRIGHT SIDBELBASE, ALL RIGHTS RESERVED!!!
+//THANKYOU FOR APPROVING THIS PROGRAM, MADE WITH LOVE IN NEPAL, COPYRIGHT SIDBELBASE, ALL RIGHTS RESERVED!!!
