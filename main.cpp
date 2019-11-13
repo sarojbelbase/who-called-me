@@ -169,7 +169,7 @@ void NumberSearch :: CreateMenu()
 
 void NumberSearch :: WriteNumber()
   {
-        ofp.open("F:/Codings/ThirdSem/NumberSheet.txt");  //opens file for writing
+        ofp.open("./NumberSheet.txt");  //opens file for writing
         system("cls"); //clears the system
        ofp.write((char*)&(UserNumber),sizeof(UserNumber)); //specify what to write and what of length 
        ofp.flush(); //it will later flush all the stream
@@ -178,7 +178,7 @@ void NumberSearch :: WriteNumber()
 void NumberSearch :: PrintNumber() 
 {
     system("cls"); //it clears the screen
-    fp.open("F:/Codings/ThirdSem/NumberSheet.txt",ios::in); //It opens the file specified in the following
+    fp.open("./NumberSheet.txt",ios::in); //It opens the file specified in the following
     if(!fp) 
     	{
         		cout << "\n\n\n\t ERROR!!! File couldn't be opened! \n\n\n\t"<< endl; //Error specified
@@ -195,7 +195,7 @@ void NumberSearch :: PrintNumber()
 void NumberSearch :: AboutMe()
 {
 	//Prints about me 
-	cout << "\n\n\n\t Program: NumberChecker 1.1 \n\t Developer: Siddharth Belbase \n\t siddharthbelbase@gmail.com"<< "\n\n\t";
+	cout << "\n\n\n\t Program: NumberChecker 1.2 \n\t Developer: Siddharth Belbase \n\t siddharthbelbase@gmail.com"<< "\n\n\t";
 }
 //THANKYOU FOR APPROVING THIS PROGRAM, MADE WITH LOVE IN NEPAL, COPYRIGHT SIDBELBASE, ALL RIGHTS RESERVED!!!
 //THANKYOU FOR APPROVING THIS PROGRAM, MADE WITH LOVE IN NEPAL, COPYRIGHT SIDBELBASE, ALL RIGHTS RESERVED!!!
