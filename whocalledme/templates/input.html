@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover" />
+    <meta name="name" content="who called me">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="language" content="English">
+    <meta name="serp-rank" position="1" />
+    <meta name="author" content="@sidbelbase">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="title" content="traversenepal : a better way to know and experience nepal">
+    <meta name="description" content="Find the number when someone calls.">
+    <meta name="keywords"
+        content="NTC, Namaste, Ncell, HelloNepal, SmartCell, Landline, UTL, Doorsanchar, Truecaller, Find Numbers, Mero Mobile">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="traversenepal : a better way to know and experience nepal">
+    <meta property="og:description" content="Find the number when someone calls.">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="traversenepal : a better way to know and experience nepal">
+    <meta property="twitter:description" content="Find the number when someone calls.">
+    <meta property="twitter:image" content="">
+
+    <!-- Links -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/' + 'bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/' + 'main.css') }}">
+</head>
+
+<body>
+
+
+    <div class="container-fluid px-2">
+        <div class="row no-gutters">
+            <div class="col-md-12" id="main-section">
+                {% for extension in  extensions -%}
+                {{ extension.extension_id }}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- ! JAVASCRIPT SECTION -->
+    <!-- FIRST POPPER.JS AND THEN BOOTSTRAP.JS -->
+    <script src="{{ url_for('static', filename='js/' + 'jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename= 'js/' + 'bootstrap.bundle.js') }}"></script>
+    <script src="{{ url_for('static', filename= 'js/' + 'main.js') }}"></script>
+
+</body>
+
+</html>

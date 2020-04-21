@@ -1,6 +1,6 @@
 ## Who Called Me?
 
-It's a flask app that checks whether the number is from Ncell, Namaste, UTL, SmartCell or HelloNepal. 
+A flask app that checks whether the number is from Ncell, Namaste, UTL, SmartCell or HelloNepal. 
 
 ## TODOS:
 
