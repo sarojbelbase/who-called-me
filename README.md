@@ -1,7 +1,10 @@
-# NumberChecker
-It is a program that checks whether your number is Ncell, Namaste, UTL, SmartCell or HelloNepal. 
+## Who Called Me?
+
+It's a flask app that checks whether the number is from Ncell, Namaste, UTL, SmartCell or HelloNepal. 
 
 ## TODOS:
 
-1. [ ] Flask Implementation
-2. [ ] SQlite Storage Based
+01. [ ] Flask Implementation
+02. [ ] SQlite Storage Based
+03. [ ] Truecaller Integration
+04. [ ] Refactor from C++
