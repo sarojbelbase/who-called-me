@@ -1,5 +1,5 @@
 from flask import current_app, Flask
-from whocalledme import db
+from whocalledme import db, whooshee
 
 class Company(db.Model):
     __tablename__ = 'company'
@@ -10,13 +10,13 @@ class Company(db.Model):
     def __repr__(self):
         return f"Company{self.company_id}: [{self.company_name}]"
 
-
+@whooshee.register_model('extension_number')
 class Extension(db.Model):
     __tablename__ = 'extension'
     id = db.Column(db.Integer, primary_key=True)
     extension_id = db.Column(db.Integer, db.ForeignKey('company.company_id'), nullable=False)
     extension_number = db.Column(db.String(10), unique=True)
-    extension_type = db.Column(db.String(10), unique=True)
+    extension_type = db.Column(db.String(10))
     extension_name = db.Column(db.String(30))
     
     def __repr__(self):

@@ -1,158 +1,161 @@
 BEGIN TRANSACTION;
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (1,1,'9829','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (2,1,'9816','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (3,1,'9817','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (4,1,'9818','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (5,1,'9819','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (6,1,'9820','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (7,1,'9821','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (8,1,'9822','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (9,1,'9823','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (10,1,'9824','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (11,1,'9825','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (12,1,'9826','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (13,1,'9827','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (14,1,'9815','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (15,1,'9814','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (16,1,'9813','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (17,1,'9800','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (18,1,'9801','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (19,1,'9802','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (20,1,'9803','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (21,1,'9804','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (22,1,'9805','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (23,1,'9806','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (24,1,'9807','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (25,1,'9808','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (26,1,'9809','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (27,1,'9810','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (28,1,'9811','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (29,1,'9812','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (30,2,'9861','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (31,2,'9860','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (32,2,'9859','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (33,2,'9858','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (34,2,'9857','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (35,2,'9856','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (36,2,'9862','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (37,2,'9863','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (38,2,'9864','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (39,2,'9865','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (40,2,'9866','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (41,2,'9867','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (42,2,'9868','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (43,2,'9869','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (44,2,'9855','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (45,2,'9854','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (46,2,'9840','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (47,2,'9841','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (48,2,'9842','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (49,2,'9843','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (50,2,'9844','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (51,2,'9845','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (52,2,'9846','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (53,2,'9847','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (54,2,'9853','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (55,2,'9852','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (56,2,'9851','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (57,2,'9850','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (58,2,'9849','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (59,2,'9848','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (60,3,'9881','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (61,3,'9882','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (62,3,'9883','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (63,3,'9884','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (64,3,'9885','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (65,3,'9886','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (66,3,'9887','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (67,3,'9888','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (68,3,'9889','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (69,3,'9880','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (70,3,'9619','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (71,3,'9610','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (72,3,'9611','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (73,3,'9612','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (74,3,'9613','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (75,3,'9614','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (76,3,'9615','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (77,3,'9616','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (78,3,'9617','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (79,3,'9618','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (80,4,'9721','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (81,4,'9729','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (82,4,'9722','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (83,4,'9723','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (84,4,'9724','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (85,4,'9725','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (86,4,'9726','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (87,4,'9727','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (88,4,'9728','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (89,4,'9720','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (90,5,'9639','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (91,5,'9630','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (92,5,'9631','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (93,5,'9632','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (94,5,'9633','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (95,5,'9634','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (96,5,'9635','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (97,5,'9636','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (98,5,'9638','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (99,5,'9637','Mobile',NULL);
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (100,6,'01','Landline','Kathmandu');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (101,6,'010','Landline','Dhading');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (102,6,'011','Landline','Banepa');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (103,6,'021','Landline','Biratnagar');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (104,6,'023','Landline','Damak');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (105,6,'024','Landline','Taplejung');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (106,6,'025','Landline','Dharan');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (107,6,'026','Landline','Dhankuta');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (108,6,'027','Landline','Illam');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (109,6,'029','Landline','Bhojpur');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (110,6,'031','Landline','Rajbiraj');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (111,6,'033','Landline','Siraha');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (112,6,'035','Landline','Udaipur');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (113,6,'036','Landline','Khotang');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (114,6,'037','Landline','Okhaldhunga');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (115,6,'041','Landline','Janakpur');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (116,6,'044','Landline','Jaleshwar');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (117,6,'046','Landline','Malangawa');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (118,6,'047','Landline','Sindhuli');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (119,6,'048','Landline','Ramechap');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (120,6,'049','Landline','Charikot');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (121,6,'051','Landline','Birgung');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (122,6,'053','Landline','Simra');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (123,6,'055','Landline','Gaur');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (124,6,'056','Landline','Bharatpur');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (125,6,'057','Landline','Hetauda');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (126,6,'061','Landline','Pokhara');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (127,6,'063','Landline','Syanja');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (128,6,'064','Landline','Gorkha');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (129,6,'065','Landline','Damauli');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (130,6,'066','Landline','Lumjung');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (131,6,'067','Landline','Khusma');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (132,6,'068','Landline','Baglung');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (133,6,'069','Landline','Myagdi');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (134,6,'071','Landline','Lumbini');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (135,6,'075','Landline','Palpa');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (136,6,'076','Landline','Taulihawa');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (137,6,'077','Landline','Arghakhanchi');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (138,6,'078','Landline','Nawalparasi');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (139,6,'079','Landline','Gulmi');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (140,6,'081','Landline','Nepalgunj');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (141,6,'082','Landline','Dang');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (142,6,'083','Landline','Surkhet');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (143,6,'084','Landline','Bardiya');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (144,6,'091','Landline','Tikapur');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (145,6,'093','Landline','Darchula');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (146,6,'094','Landline','Doti');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (147,6,'095','Landline','Baitadi');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (148,6,'096','Landline','Dadheldhura');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (149,6,'097','Landline','Achham');
-INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES (150,6,'099','Landline','Mahendranagar');
-INSERT INTO "company" ("company_id","company_name") VALUES (1,'ncell');
-INSERT INTO "company" ("company_id","company_name") VALUES (2,'namaste');
-INSERT INTO "company" ("company_id","company_name") VALUES (3,'smartcell');
-INSERT INTO "company" ("company_id","company_name") VALUES (4,'utl');
-INSERT INTO "company" ("company_id","company_name") VALUES (5,'hellonepal');
-INSERT INTO "company" ("company_id","company_name") VALUES (6,'landline');
+INSERT INTO "company" ("company_id","company_name") VALUES (1,'ncell'),
+ (2,'namaste'),
+ (3,'smartcell'),
+ (4,'utl'),
+ (5,'hellonepal'),
+ (6,'landline');
+
+ INSERT INTO "extension" ("id","extension_id","extension_number","extension_type","extension_name") VALUES 
+(1,1,'9829','Mobile',NULL),
+ (2,1,'9816','Mobile',NULL),
+ (3,1,'9817','Mobile',NULL),
+ (4,1,'9818','Mobile',NULL),
+ (5,1,'9819','Mobile',NULL),
+ (6,1,'9820','Mobile',NULL),
+ (7,1,'9821','Mobile',NULL),
+ (8,1,'9822','Mobile',NULL),
+ (9,1,'9823','Mobile',NULL),
+ (10,1,'9824','Mobile',NULL),
+ (11,1,'9825','Mobile',NULL),
+ (12,1,'9826','Mobile',NULL),
+ (13,1,'9827','Mobile',NULL),
+ (14,1,'9815','Mobile',NULL),
+ (15,1,'9814','Mobile',NULL),
+ (16,1,'9813','Mobile',NULL),
+ (17,1,'9800','Mobile',NULL),
+ (18,1,'9801','Mobile',NULL),
+ (19,1,'9802','Mobile',NULL),
+ (20,1,'9803','Mobile',NULL),
+ (21,1,'9804','Mobile',NULL),
+ (22,1,'9805','Mobile',NULL),
+ (23,1,'9806','Mobile',NULL),
+ (24,1,'9807','Mobile',NULL),
+ (25,1,'9808','Mobile',NULL),
+ (26,1,'9809','Mobile',NULL),
+ (27,1,'9810','Mobile',NULL),
+ (28,1,'9811','Mobile',NULL),
+ (29,1,'9812','Mobile',NULL),
+ (30,2,'9861','Mobile',NULL),
+ (31,2,'9860','Mobile',NULL),
+ (32,2,'9859','Mobile',NULL),
+ (33,2,'9858','Mobile',NULL),
+ (34,2,'9857','Mobile',NULL),
+ (35,2,'9856','Mobile',NULL),
+ (36,2,'9862','Mobile',NULL),
+ (37,2,'9863','Mobile',NULL),
+ (38,2,'9864','Mobile',NULL),
+ (39,2,'9865','Mobile',NULL),
+ (40,2,'9866','Mobile',NULL),
+ (41,2,'9867','Mobile',NULL),
+ (42,2,'9868','Mobile',NULL),
+ (43,2,'9869','Mobile',NULL),
+ (44,2,'9855','Mobile',NULL),
+ (45,2,'9854','Mobile',NULL),
+ (46,2,'9840','Mobile',NULL),
+ (47,2,'9841','Mobile',NULL),
+ (48,2,'9842','Mobile',NULL),
+ (49,2,'9843','Mobile',NULL),
+ (50,2,'9844','Mobile',NULL),
+ (51,2,'9845','Mobile',NULL),
+ (52,2,'9846','Mobile',NULL),
+ (53,2,'9847','Mobile',NULL),
+ (54,2,'9853','Mobile',NULL),
+ (55,2,'9852','Mobile',NULL),
+ (56,2,'9851','Mobile',NULL),
+ (57,2,'9850','Mobile',NULL),
+ (58,2,'9849','Mobile',NULL),
+ (59,2,'9848','Mobile',NULL),
+ (60,3,'9881','Mobile',NULL),
+ (61,3,'9882','Mobile',NULL),
+ (62,3,'9883','Mobile',NULL),
+ (63,3,'9884','Mobile',NULL),
+ (64,3,'9885','Mobile',NULL),
+ (65,3,'9886','Mobile',NULL),
+ (66,3,'9887','Mobile',NULL),
+ (67,3,'9888','Mobile',NULL),
+ (68,3,'9889','Mobile',NULL),
+ (69,3,'9880','Mobile',NULL),
+ (70,3,'9619','Mobile',NULL),
+ (71,3,'9610','Mobile',NULL),
+ (72,3,'9611','Mobile',NULL),
+ (73,3,'9612','Mobile',NULL),
+ (74,3,'9613','Mobile',NULL),
+ (75,3,'9614','Mobile',NULL),
+ (76,3,'9615','Mobile',NULL),
+ (77,3,'9616','Mobile',NULL),
+ (78,3,'9617','Mobile',NULL),
+ (79,3,'9618','Mobile',NULL),
+ (80,4,'9721','Mobile',NULL),
+ (81,4,'9729','Mobile',NULL),
+ (82,4,'9722','Mobile',NULL),
+ (83,4,'9723','Mobile',NULL),
+ (84,4,'9724','Mobile',NULL),
+ (85,4,'9725','Mobile',NULL),
+ (86,4,'9726','Mobile',NULL),
+ (87,4,'9727','Mobile',NULL),
+ (88,4,'9728','Mobile',NULL),
+ (89,4,'9720','Mobile',NULL),
+ (90,5,'9639','Mobile',NULL),
+ (91,5,'9630','Mobile',NULL),
+ (92,5,'9631','Mobile',NULL),
+ (93,5,'9632','Mobile',NULL),
+ (94,5,'9633','Mobile',NULL),
+ (95,5,'9634','Mobile',NULL),
+ (96,5,'9635','Mobile',NULL),
+ (97,5,'9636','Mobile',NULL),
+ (98,5,'9638','Mobile',NULL),
+ (99,5,'9637','Mobile',NULL),
+ (100,6,'015','Landline','Kathmandu'),
+ (101,6,'010','Landline','Dhading'),
+ (102,6,'011','Landline','Banepa'),
+ (103,6,'021','Landline','Biratnagar'),
+ (104,6,'023','Landline','Damak'),
+ (105,6,'024','Landline','Taplejung'),
+ (106,6,'025','Landline','Dharan'),
+ (107,6,'026','Landline','Dhankuta'),
+ (108,6,'027','Landline','Illam'),
+ (109,6,'029','Landline','Bhojpur'),
+ (110,6,'031','Landline','Rajbiraj'),
+ (111,6,'033','Landline','Siraha'),
+ (112,6,'035','Landline','Udaipur'),
+ (113,6,'036','Landline','Khotang'),
+ (114,6,'037','Landline','Okhaldhunga'),
+ (115,6,'041','Landline','Janakpur'),
+ (116,6,'044','Landline','Jaleshwar'),
+ (117,6,'046','Landline','Malangawa'),
+ (118,6,'047','Landline','Sindhuli'),
+ (119,6,'048','Landline','Ramechap'),
+ (120,6,'049','Landline','Charikot'),
+ (121,6,'051','Landline','Birgung'),
+ (122,6,'053','Landline','Simra'),
+ (123,6,'055','Landline','Gaur'),
+ (124,6,'056','Landline','Bharatpur'),
+ (125,6,'057','Landline','Hetauda'),
+ (126,6,'061','Landline','Pokhara'),
+ (127,6,'063','Landline','Syanja'),
+ (128,6,'064','Landline','Gorkha'),
+ (129,6,'065','Landline','Damauli'),
+ (130,6,'066','Landline','Lumjung'),
+ (131,6,'067','Landline','Khusma'),
+ (132,6,'068','Landline','Baglung'),
+ (133,6,'069','Landline','Myagdi'),
+ (134,6,'071','Landline','Lumbini'),
+ (135,6,'075','Landline','Palpa'),
+ (136,6,'076','Landline','Taulihawa'),
+ (137,6,'077','Landline','Arghakhanchi'),
+ (138,6,'078','Landline','Nawalparasi'),
+ (139,6,'079','Landline','Gulmi'),
+ (140,6,'081','Landline','Nepalgunj'),
+ (141,6,'082','Landline','Dang'),
+ (142,6,'083','Landline','Surkhet'),
+ (143,6,'084','Landline','Bardiya'),
+ (144,6,'091','Landline','Tikapur'),
+ (145,6,'093','Landline','Darchula'),
+ (146,6,'094','Landline','Doti'),
+ (147,6,'095','Landline','Baitadi'),
+ (148,6,'096','Landline','Dadheldhura'),
+ (149,6,'097','Landline','Achham'),
+ (150,6,'099','Landline','Mahendranagar'),
+ (151,6,'014','Landline','Kathmandu');
 COMMIT;
