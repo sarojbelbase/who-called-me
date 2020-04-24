@@ -1,15 +1,8 @@
+<!doctype html>
 {% extends "base.html" -%}
 {% block content -%}
-<header class="masthead text-center d-flex" style="background-image:url('static/images/hero.jpg');">
-    <div class="container my-auto">
-        <div class="row">
-            <div class="col-lg-7 mx-auto">
-                <form method="get" action="{{ url_for('main.search_result') }}">
-                    <input class="form-control" id="search" name="number" placeholder="Enter Number Here" required
-                        type="search" rel="search">
-                </form>
-            </div>
-        </div>
-    </div>
-</header>
+<form method="get" action="{{ url_for('main.search_result') }}">
+    <input class="form-control" id="search" name="number" type="search" rel="search" required="required"
+        placeholder="Enter Number Here">
+</form>
 {% endblock -%}

@@ -93,6 +93,10 @@ header {
 
 /* ?--------------------------------------------------------- SEARCH --------------------------------------------------------- */
 
+input {
+  font-family: "Simple-Line-Icons", sans-serif;
+}
+
 #search {
   font-size: larger;
   background: #e1e0e4;
