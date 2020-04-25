@@ -27,6 +27,7 @@
 header {
   background: #252527;
   background-position: center;
+  color: #e1e0e4;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -93,10 +94,6 @@ header {
 
 /* ?--------------------------------------------------------- SEARCH --------------------------------------------------------- */
 
-input {
-  font-family: "Simple-Line-Icons", sans-serif;
-}
-
 #search {
   font-size: larger;
   background: #e1e0e4;
@@ -113,7 +110,6 @@ input {
 #search:focus {
   outline: none !important;
   border: none !important;
-  outline: none !important;
   box-shadow: none !important;
   border-color: transparent !important;
   font-size: larger;
@@ -123,4 +119,21 @@ input {
   border-radius: 30px;
   padding: 25px 22px;
   transition: all ease 1s;
+}
+
+.search-icon {
+  background-color: #001fcc;
+  outline: none !important;
+  border: none !important;
+  border-radius:24px;
+  margin-inline-end: 19px;
+  padding: 10px 12px;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 4px;
+}
+
+.search-icon:hover {
+  background-color: #15008f;
 }
