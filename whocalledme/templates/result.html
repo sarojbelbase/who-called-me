@@ -1,6 +1,18 @@
 <!Doctype html>
-<title>Who dafuq is {{query}}?</title>
+{% if not result -%}
+<title>Who dafuq is {{query}}? | whocalledme</title>
+{% else -%}
+<title>We found {{query}} | whocalledme </title>
+{% endif -%}
+
 {% extends "base.html" -%}
 {% block content -%}
-<span class="text-white text-uppercase h3">I'TS A {{result.carrier.company_name}} NUMBER!!!</span>
+{% if not result -%}
+<span class="text-white text-uppercase h3">OUR DATABASE DIDN'T FOUND ANYTHING.</span>
+{% else -%}
+<p class="text-white text-uppercase h3">I'TS A {{result.carrier.company_name}} NUMBER!!!</p>
+{% if result.extension_name -%}
+<p class="text-white text-uppercase h4">LOCATED AT {{result.extension_name}}.</p>
+{% endif -%}
+{% endif -%}
 {% endblock -%}

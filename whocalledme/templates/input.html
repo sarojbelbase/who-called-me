@@ -1,12 +1,15 @@
 <!doctype html>
 {% extends "base.html" -%}
 {% block content -%}
-<div class="searcher">
-    <form method="get" action="{{ url_for('main.search_result') }}">
-        <input class="form-control" id="search" name="number" type="search" rel="search" required="required"
-            placeholder="Enter Number Here" autocomplete="off" tabindex="-1">
-        <button class="search-icon" title="Search Number"><i
-                class="icon-magnifier h5 text-white font-weight-bold align-middle"></i></button>
+<h1 class="brand-heading mb-3">WHO <i class="icon-call-in icon"></i>ALLED ME?</h1>
+<div class="wholearea">
+    <div class="country" id="smallerdevices">+977</div>
+    <div class="country" id="biggerdevices">+977 NEPAL</div>
+    <form method="get" action="{{ url_for('main.search_result') }}" class="inputarea">
+        <input class="form-control" id="searchbar" name="number" rel="search" required="required" type="number"
+            placeholder="Enter Number Here" autocomplete="off" tabindex="0" pattern="[0-9]*">
+        <button class="search-icon" title="Search Number">
+            <i class="icon-magnifier h5 text-white font-weight-bold align-middle" tabindex="1"></i></button>
     </form>
 </div>
 {% endblock -%}

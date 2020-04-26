@@ -1,6 +1,5 @@
 from flask import render_template, url_for, flash, redirect, request, abort, Blueprint
-from whocalledme import db
-from whocalledme.models import Extension, Company
+from whocalledme.main.utils import try_searching
 
 main = Blueprint('main', __name__)
 
@@ -14,9 +13,7 @@ def search_result():
     if request.method == 'GET':
         query= str(request.args.get('number'))
         if query and len(query) == 10 and query.startswith('9') :
-            stripthatdown = query[:4]
+            return try_searching(query, query[:4])
         elif query and query.startswith('0'):
-            stripthatdown = query[:3]
-        result = Extension.query.whooshee_search(stripthatdown, order_by_relevance=-1).first()
-        return render_template('result.html', query=query, result=result)
-    return render_template('notfound.html', query=query)
+            return try_searching(query, query[:3])
+        return render_template('result.html', query=query, result=None)

@@ -29,15 +29,24 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/' + 'bootstrap.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/' + 'main.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/' + 'sli.min.css') }}">
+<link href="https://fonts.googleapis.com/css?family=Overpass:600,700&display=swap" rel="stylesheet">
 
 </head>
 
 <header class="masthead text-center d-flex" style="background-image:url('static/images/bg.webp');">
     <div class="container my-auto">
         <div class="row">
-            <div class="col-lg-7 mx-auto">
+            <div class="col-xl-7 col-lg-8 mx-auto">
                 {% block content -%}
                 {% endblock -%}
+            </div>
+        </div>
+    </div>
+    <div class="fixed-bottom container">
+        <div class="row">
+            <div class="col offset-lg-11 mb-4">
+                <a href="https://github.com/sidbelbase" class="text-decoration-none" title="sidbelbase on github">
+                    <i class="icon-social-github github h5"></i></a>
             </div>
         </div>
     </div>

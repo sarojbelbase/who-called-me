@@ -31,8 +31,7 @@ header {
   background-size: cover;
   display: flex;
   justify-content: center;
-  font-family: "Roboto Condensed", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
   height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -94,12 +93,37 @@ header {
 
 /* ?--------------------------------------------------------- SEARCH --------------------------------------------------------- */
 
-#search {
-  font-size: larger;
+.wholearea{
+  position:relative;
   background: #e1e0e4;
-  font-weight: 500;
   border-radius: 30px;
-  padding: 25px 22px;
+  padding: 5px 2px;
+}
+
+.wholearea > .country {
+  background-color: #2c2c2c;
+  border-radius: 24px;
+  position:absolute;
+  font-weight: 500;
+  font-size: 1.2em;
+  padding:7.5px 13px;
+  margin-inline-start: 5px;
+  cursor: pointer;
+  left:0px;
+  top:4px;
+}
+
+.wholearea > .inputarea{
+  padding-left: 4.6rem;
+  padding-right: 3.2rem;
+}
+
+.inputarea > #searchbar {
+  padding-top: 4px;
+  padding-left:6px;
+  font-size: 1.2em;
+  font-weight: 600;
+  background: #e1e0e4;
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
@@ -107,26 +131,22 @@ header {
   transition: all ease 1s;
 }
 
-#search:focus {
+.inputarea > #searchbar:focus {
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
   border-color: transparent !important;
-  font-size: larger;
-  background: #e1e0e4;
-  color: #252527;
-  font-weight: 500;
-  border-radius: 30px;
-  padding: 25px 22px;
+  font-size: 1.2em;
+  color: #1a1a1a;
   transition: all ease 1s;
 }
 
-.search-icon {
-  background-color: #001fcc;
+.inputarea > .search-icon {
+  background-color: #dc3545;
   outline: none !important;
   border: none !important;
   border-radius:24px;
-  margin-inline-end: 19px;
+  margin-inline-end: 5.5px;
   padding: 10px 12px;
   position: absolute;
   cursor: pointer;
@@ -134,6 +154,67 @@ header {
   top: 4px;
 }
 
-.search-icon:hover {
-  background-color: #15008f;
+.inputarea > .search-icon:hover {
+  background-color: #b92635;
+}
+
+@media (max-width: 769px) {
+
+  #biggerdevices {
+  display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .wholearea > .inputarea {
+    padding-left: 8rem;
+    padding-right: 4rem;
+  }
+
+  #smallerdevices {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+.brand-heading {
+    font-size: 80px;
+  }
+  .icon {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-heading {
+      font-size: 55px;
+    }
+    .icon {
+      font-size: 40px;
+    }
+  }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.github {
+  border: 2px solid #868686;
+  padding: 6px 7px;
+  border-radius: 24px;
+  color: #afafaf;
+}
+
+.github:hover {
+  background-color: #7a7a7a6c;
+  opacity: 0.8;
+  transition: ease all 0.3s;
 }
