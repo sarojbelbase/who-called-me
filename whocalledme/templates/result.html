@@ -7,12 +7,134 @@
 
 {% extends "base.html" -%}
 {% block content -%}
-{% if not result -%}
-<span class="text-white text-uppercase h3">OUR DATABASE DIDN'T FOUND ANYTHING.</span>
-{% else -%}
-<p class="text-white text-uppercase h3">I'TS A {{result.carrier.company_name}} NUMBER!!!</p>
-{% if result.extension_name -%}
-<p class="text-white text-uppercase h4">LOCATED AT {{result.extension_name}}.</p>
-{% endif -%}
-{% endif -%}
+<div class="container-fluid">
+    <div class="row no-gutters">
+        <div class="col-lg-12">
+            <div class="bedsheet">
+
+                <div class="pillows">
+                    {% if result.extension_name -%}
+                    <img src="static/images/telephone.svg" type="image/svg" alt="telephone" class="telicon">
+                    <span class="text-dark display-3 font-weight-bold">{{query}}</span>
+                    {% else -%}
+                    <img src="static/images/mobile.svg" type="image/svg" alt="mobile" class="mobicon">
+                    <span class="text-dark display-2 font-weight-bold">{{query}}</span>
+                    {% endif -%}
+                </div>
+
+                {% if result -%}
+                {% if result.carrier.company_name == 'namaste' -%}
+                <div class="container ntc-blanket">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4">
+                            <img src="static/images/namaste.png" type="image/png" alt="namaste" class="companies">
+                        </div>
+                        <div class="col-sm-8 mt-2">
+                            <p class="text-white text-uppercase h4 font-weight-bold">{{result.carrier.company_name}}
+                                NUMBER</p>
+                            <h3 class="my-2 text-center font-weight-bold text-white">···</h3>
+                            <p class="h3"><i class="icon-badge h4 mr-1"></i>NEPAL TELECOM</p>
+                            <p class="h4"><i class="icon-location-pin h5 mr-1"></i>COMING SOON...</p>
+                        </div>
+                    </div>
+                </div>
+                {% elif result.carrier.company_name == 'smartcell' -%}
+                <div class="container smart-blanket">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4">
+                            <img src="static/images/smartcell.png" type="image/png" alt="smartcell" class="companies">
+                        </div>
+                        <div class="col-sm-8 mt-2">
+                            <p class="text-white text-uppercase h4 font-weight-bold">{{result.carrier.company_name}}
+                                NUMBER</p>
+                            <h3 class="my-2 text-center font-weight-bold text-white">···</h3>
+                            <p class="h3"><i class="icon-badge h4 mr-1"></i>SMART</p>
+                            <p class="h4"><i class="icon-location-pin h5 mr-1"></i>COMING SOON...</p>
+                        </div>
+                    </div>
+                </div>
+                {% elif result.carrier.company_name == 'ncell' -%}
+                <div class="container-fluid shada-blanket">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="static/images/ncell.png" type="image/png" alt="ncell" class="companies">
+                        </div>
+                        <div class="col-sm-8 ncell mt-3">
+                            <p class="text-uppercase h4 font-weight-bold">{{result.carrier.company_name}} NUMBER</p>
+                            <h3 class="my-2 text-center font-weight-bold">···</h3>
+                            <p class="h3"><i class="icon-badge h4 mr-1"></i>NCELL AXIATA</p>
+                            <p class="h4"><i class="icon-location-pin h5 mr-1"></i>COMING SOON...</p>
+                        </div>
+                    </div>
+                </div>
+                {% elif result.carrier.company_name == 'utl' -%}
+                <div class="container-fluid sirak-blanket">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="static/images/utl.jpg" type="image/png" alt="utl" class="companies">
+                        </div>
+                        <div class="col-sm-8 utl mt-3">
+                            <p class="text-uppercase h4 font-weight-bold">{{result.carrier.company_name}} NUMBER</p>
+                            <h3 class="my-2 text-center font-weight-bold">···</h3>
+                            <p class="h4"><i class="icon-badge h5 mr-1"></i>UNITED TELECOM LIMITED</p>
+                            <p class="h4"><i class="icon-location-pin h5 mr-1"></i>COMING SOON...</p>
+                        </div>
+                    </div>
+                </div>
+                {% elif result.carrier.company_name == 'hellonepal' -%}
+                <div class="container-fluid sirak-blanket">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="static/images/hellonepal.png" type="image/png" alt="hellonepal" class="companies">
+                        </div>
+                        <div class="col-sm-8 text-warning mt-2">
+                            <p class="text-uppercase h4 font-weight-bold">{{result.carrier.company_name}} NUMBER</p>
+                            <h3 class="my-2 text-center font-weight-bold">···</h3>
+                            <p class="h4"><i class="icon-badge h5 mr-1"></i>NEPAL SATELLITE TELECOM</p>
+                            <p class="h4"><i class="icon-location-pin h5 mr-1"></i>COMING SOON...</p>
+                        </div>
+                    </div>
+                </div>
+                {% elif result.carrier.company_name == 'landline' -%}
+                <div class="container-fluid shada-blanket">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="static/images/landline.png" type="image/png" alt="landline" class="companies">
+                        </div>
+                        <div class="col-sm-8 text-dark">
+                            <p class="text-uppercase h4 font-weight-bold">{{result.carrier.company_name}} NUMBER</p>
+                            <p class="h4 text-uppercase">
+                                <i class="icon-location-pin h5 mr-1"></i>{{result.extension_name}}</p>
+                            <h3 class="my-2 text-center font-weight-bold">···</h3>
+                            <p class="h4"><i class="icon-badge h5 mr-1"></i>NEPAL DOORSANCHAR</p>
+                        </div>
+                    </div>
+                </div>
+                {% endif -%}
+                {% else -%}
+                <div class="container-fluid shada-blanket">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="static/images/notfound.png" type="image/png" alt="notfound" class="companies">
+                        </div>
+                        <div class="col-sm-8 font-weight-bold mt-3">
+                            <p class="h2 text-primary">OOOOOOOOOOOOOPS</p>
+                            <p class="h4 text-success">OUR SEARCH MATRIX FAILED.</p>
+                            <p class="h6 text-dark">We couldnt find any carrier with this number.</p>
+                            <h3 class="my-2 text-center font-weight-bold text-dark">···</h3>
+                        </div>
+                    </div>
+                </div>
+                {% endif -%}
+            </div>
+            <div class="text-center pt-2 pb-2 font-weight-bold">
+                <span><a href="javascript:history.back()" class="text-decoration-none">
+                        <i class="icon-arrow-left-circle font-weight-bold align-baseline small mr-1"></i>
+                        GO BACK</a></span>
+                <span>·</span>
+                <span class="text-warning">DEVELOPED BY SIDBELBASE.</span>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock -%}

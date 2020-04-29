@@ -31,7 +31,7 @@ header {
   background-size: cover;
   display: flex;
   justify-content: center;
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Asap Condensed', sans-serif;
   height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -114,7 +114,7 @@ header {
 }
 
 .wholearea > .inputarea{
-  padding-left: 4.6rem;
+  padding-left: 4.3rem;
   padding-right: 3.2rem;
 }
 
@@ -167,7 +167,7 @@ header {
 
 @media (min-width: 769px) {
   .wholearea > .inputarea {
-    padding-left: 8rem;
+    padding-left: 7.6rem;
     padding-right: 4rem;
   }
 
@@ -217,4 +217,78 @@ input[type=number] {
   background-color: #7a7a7a6c;
   opacity: 0.8;
   transition: ease all 0.3s;
+}
+
+.bedsheet {
+  background-color: #e1e0e4;
+  border-radius: 20px;
+}
+
+.pillows {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.pillows > .mobicon {
+  width:12%;
+  height:12%;
+  margin-right: 3%;
+  vertical-align: middle;
+}
+
+.pillows > .telicon {
+  width:15%;
+  height:15%;
+  margin-right: 3%;
+  vertical-align: middle;
+}
+
+.bedsheet .ntc-blanket {
+  background-color:#0054a5;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-top:4%;
+  padding-bottom:4%;
+
+}
+
+.bedsheet .smart-blanket {
+  background-color: #d9203b;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-top:4%;
+  padding-bottom:4%;
+}
+
+.bedsheet .shada-blanket {
+  background-color: #d3d3d3;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-top:4%;
+  padding-bottom:4%;
+}
+
+.bedsheet .sirak-blanket {
+  background-color: #fff;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-top:4%;
+  padding-bottom:4%;
+}
+
+.companies {
+  height: 25vh;
+  width: auto;
+}
+
+.ncell {
+  color: #3d1868;
+}
+
+.utl {
+  color: midnightblue;
 }

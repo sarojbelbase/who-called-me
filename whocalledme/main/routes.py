@@ -1,4 +1,4 @@
-from flask import render_template, url_for, flash, redirect, request, abort, Blueprint
+from flask import render_template, url_for, request
 from whocalledme.main.utils import try_searching
 
 main = Blueprint('main', __name__)
