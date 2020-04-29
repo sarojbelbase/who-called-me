@@ -3,7 +3,7 @@
 
 <img src="whocalledme/static/images/hero.png" width="100%" height="auto">
 
-A flask app that checks whether the number is from Ncell, Namaste, UTL, SmartCell, HelloNepal or Landline.
+A flask app that checks whether the number is from Ncell, Namaste, UTL, SmartCell, HelloNepal or Landline. [See on heroku?](https://whocalledmee.herokuapp.com)
 
 ### Installation
 

@@ -1,4 +1,4 @@
-from whocalledme import create_app, db
+from whocalledme import create_app, db, whooshee
 from whocalledme.models import Extension, Company
 
 app = create_app()
