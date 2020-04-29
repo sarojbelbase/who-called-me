@@ -1,4 +1,4 @@
-from whocalledme.models import Extension, Company
+from whocalledme.models import Extension
 from flask import render_template
 
 def try_searching(query, stripped_number):

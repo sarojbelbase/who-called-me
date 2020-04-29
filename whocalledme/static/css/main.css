@@ -32,44 +32,11 @@ header {
   display: flex;
   justify-content: center;
   font-family: 'Asap Condensed', sans-serif;
-  height: 100vh;
+  height: 100vh !important;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   font-display: fallback !important;
-}
-
-.bold {
-  font-weight: 500 !important;
-}
-
-.bolder {
-  font-weight: 600 !important;
-}
-
-.rounded {
-  border-radius: 8px !important;
-}
-
-.rounder {
-  border-radius: 10px !important;
-}
-
-.rounded-top {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.rounded-bottom {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.tamers {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
 }
 
 /* ?--------------------------------------------------------- DARK THEME VARIANT --------------------------------------------------------- */
@@ -93,34 +60,34 @@ header {
 
 /* ?--------------------------------------------------------- SEARCH --------------------------------------------------------- */
 
-.wholearea{
-  position:relative;
+.wholearea {
+  position: relative;
   background: #e1e0e4;
   border-radius: 30px;
   padding: 5px 2px;
-}
+ }
 
 .wholearea > .country {
   background-color: #2c2c2c;
   border-radius: 24px;
-  position:absolute;
+  position: absolute;
   font-weight: 500;
   font-size: 1.2em;
-  padding:7.5px 13px;
+  padding: 7.5px 13px;
   margin-inline-start: 5px;
   cursor: pointer;
-  left:0px;
-  top:4px;
+  left: 0px;
+  top: 4px;
 }
 
-.wholearea > .inputarea{
+.wholearea > .inputarea {
   padding-left: 4.3rem;
   padding-right: 3.2rem;
 }
 
 .inputarea > #searchbar {
   padding-top: 4px;
-  padding-left:6px;
+  padding-left: 6px;
   font-size: 1.2em;
   font-weight: 600;
   background: #e1e0e4;
@@ -145,7 +112,7 @@ header {
   background-color: #dc3545;
   outline: none !important;
   border: none !important;
-  border-radius:24px;
+  border-radius: 24px;
   margin-inline-end: 5.5px;
   padding: 10px 12px;
   position: absolute;
@@ -158,10 +125,35 @@ header {
   background-color: #b92635;
 }
 
+@media (min-width: 992px) {
+
+  .number {
+    font-size: 8vw !important;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .number {
+    font-size: 7vw !important;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width: 405px) {
+
+  .brand-heading {
+    font-size: 41px !important;
+  }
+
+  .icon {
+    font-size: 32px !important;
+  }
+}
+
 @media (max-width: 769px) {
 
   #biggerdevices {
-  display: none !important;
+    display: none !important;
   }
 }
 
@@ -177,9 +169,10 @@ header {
 }
 
 @media (min-width: 768px) {
-.brand-heading {
+  .brand-heading {
     font-size: 80px;
   }
+
   .icon {
     font-size: 60px;
   }
@@ -187,21 +180,20 @@ header {
 
 @media (max-width: 768px) {
   .brand-heading {
-      font-size: 55px;
-    }
-    .icon {
-      font-size: 40px;
-    }
+    font-size: 55px;
   }
 
-/* Chrome, Safari, Edge, Opera */
+  .icon {
+    font-size: 40px;
+  }
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -226,58 +218,61 @@ input[type=number] {
 
 .pillows {
   display: inline-flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-top: 4%;
   margin-bottom: 4%;
+  overflow: hidden;
+}
+
+.number {
+  font-size: 10vw;
 }
 
 .pillows > .mobicon {
-  width:12%;
-  height:12%;
+  width: 12%;
+  height: 12%;
   margin-right: 3%;
   vertical-align: middle;
 }
 
 .pillows > .telicon {
-  width:15%;
-  height:15%;
+  width: 15%;
+  height: 15%;
   margin-right: 3%;
   vertical-align: middle;
 }
 
 .bedsheet .ntc-blanket {
-  background-color:#0054a5;
+  background-color: #0054a5;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
-  padding-top:4%;
-  padding-bottom:4%;
-
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .bedsheet .smart-blanket {
   background-color: #d9203b;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
-  padding-top:4%;
-  padding-bottom:4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .bedsheet .shada-blanket {
   background-color: #d3d3d3;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
-  padding-top:4%;
-  padding-bottom:4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .bedsheet .sirak-blanket {
-  background-color: #fff;
+  background-color: #ffffff;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
-  padding-top:4%;
-  padding-bottom:4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .companies {

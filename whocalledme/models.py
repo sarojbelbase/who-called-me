@@ -1,4 +1,3 @@
-from flask import current_app, Flask
 from whocalledme import db, whooshee
 
 class Company(db.Model):

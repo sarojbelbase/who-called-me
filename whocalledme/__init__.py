@@ -6,7 +6,7 @@ from flask_whooshee import Whooshee
 db = SQLAlchemy()
 whooshee = Whooshee()
 
-def create_app(config_class=Configuration):
+def create_app():
     app = Flask(__name__)
     app.config.from_object(Configuration)
     db.init_app(app)

@@ -12,13 +12,13 @@
         <div class="col-lg-12">
             <div class="bedsheet">
 
-                <div class="pillows">
+                <div class="container-fluid pillows">
                     {% if result.extension_name -%}
                     <img src="static/images/telephone.svg" type="image/svg" alt="telephone" class="telicon">
-                    <span class="text-dark display-3 font-weight-bold">{{query}}</span>
+                    <span class="text-dark number font-weight-bold">{{query}}</span>
                     {% else -%}
                     <img src="static/images/mobile.svg" type="image/svg" alt="mobile" class="mobicon">
-                    <span class="text-dark display-2 font-weight-bold">{{query}}</span>
+                    <span class="text-dark number font-weight-bold">{{query}}</span>
                     {% endif -%}
                 </div>
 
@@ -26,10 +26,10 @@
                 {% if result.carrier.company_name == 'namaste' -%}
                 <div class="container ntc-blanket">
                     <div class="row no-gutters">
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <img src="static/images/namaste.png" type="image/png" alt="namaste" class="companies">
                         </div>
-                        <div class="col-sm-8 mt-2">
+                        <div class="col-md-8 mt-2">
                             <p class="text-white text-uppercase h4 font-weight-bold">{{result.carrier.company_name}}
                                 NUMBER</p>
                             <h3 class="my-2 text-center font-weight-bold text-white">···</h3>
@@ -41,10 +41,10 @@
                 {% elif result.carrier.company_name == 'smartcell' -%}
                 <div class="container smart-blanket">
                     <div class="row no-gutters">
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <img src="static/images/smartcell.png" type="image/png" alt="smartcell" class="companies">
                         </div>
-                        <div class="col-sm-8 mt-2">
+                        <div class="col-md-8 mt-2">
                             <p class="text-white text-uppercase h4 font-weight-bold">{{result.carrier.company_name}}
                                 NUMBER</p>
                             <h3 class="my-2 text-center font-weight-bold text-white">···</h3>
@@ -56,10 +56,10 @@
                 {% elif result.carrier.company_name == 'ncell' -%}
                 <div class="container-fluid shada-blanket">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <img src="static/images/ncell.png" type="image/png" alt="ncell" class="companies">
                         </div>
-                        <div class="col-sm-8 ncell mt-3">
+                        <div class="col-md-8 ncell mt-3">
                             <p class="text-uppercase h4 font-weight-bold">{{result.carrier.company_name}} NUMBER</p>
                             <h3 class="my-2 text-center font-weight-bold">···</h3>
                             <p class="h3"><i class="icon-badge h4 mr-1"></i>NCELL AXIATA</p>
@@ -70,10 +70,10 @@
                 {% elif result.carrier.company_name == 'utl' -%}
                 <div class="container-fluid sirak-blanket">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <img src="static/images/utl.jpg" type="image/png" alt="utl" class="companies">
                         </div>
-                        <div class="col-sm-8 utl mt-3">
+                        <div class="col-md-8 utl mt-3">
                             <p class="text-uppercase h4 font-weight-bold">{{result.carrier.company_name}} NUMBER</p>
                             <h3 class="my-2 text-center font-weight-bold">···</h3>
                             <p class="h4"><i class="icon-badge h5 mr-1"></i>UNITED TELECOM LIMITED</p>
@@ -84,10 +84,10 @@
                 {% elif result.carrier.company_name == 'hellonepal' -%}
                 <div class="container-fluid sirak-blanket">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <img src="static/images/hellonepal.png" type="image/png" alt="hellonepal" class="companies">
                         </div>
-                        <div class="col-sm-8 text-warning mt-2">
+                        <div class="col-md-8 text-warning mt-2">
                             <p class="text-uppercase h4 font-weight-bold">{{result.carrier.company_name}} NUMBER</p>
                             <h3 class="my-2 text-center font-weight-bold">···</h3>
                             <p class="h4"><i class="icon-badge h5 mr-1"></i>NEPAL SATELLITE TELECOM</p>
@@ -98,10 +98,10 @@
                 {% elif result.carrier.company_name == 'landline' -%}
                 <div class="container-fluid shada-blanket">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <img src="static/images/landline.png" type="image/png" alt="landline" class="companies">
                         </div>
-                        <div class="col-sm-8 text-dark">
+                        <div class="col-md-8 text-dark">
                             <p class="text-uppercase h4 font-weight-bold">{{result.carrier.company_name}} NUMBER</p>
                             <p class="h4 text-uppercase">
                                 <i class="icon-location-pin h5 mr-1"></i>{{result.extension_name}}</p>
@@ -114,10 +114,10 @@
                 {% else -%}
                 <div class="container-fluid shada-blanket">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-md-4">
                             <img src="static/images/notfound.png" type="image/png" alt="notfound" class="companies">
                         </div>
-                        <div class="col-sm-8 font-weight-bold mt-3">
+                        <div class="col-md-8 font-weight-bold mt-3">
                             <p class="h2 text-primary">OOOOOOOOOOOOOPS</p>
                             <p class="h4 text-success">OUR SEARCH MATRIX FAILED.</p>
                             <p class="h6 text-dark">We couldnt find any carrier with this number.</p>
