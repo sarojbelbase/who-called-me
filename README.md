@@ -1,9 +1,7 @@
 ## Who Called Me? 
- [![BCH compliance](https://bettercodehub.com/edge/badge/sidbelbase/who-called-me?branch=master)](https://bettercodehub.com/) [![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/sidbelbase/who-called-me/?ref=repository-badge)
-
 <img src="whocalledme/static/images/hero.png" width="100%" height="auto">
 
-A flask app that checks whether the number is from Ncell, Namaste, UTL, SmartCell, HelloNepal or Landline. [See on heroku?](https://whocalledmee.herokuapp.com)
+A flask app that checks whether the number is from Ncell, Namaste, UTL, SmartCell, HelloNepal or Landline. [ Web Version](https://whocalledme.now.sh)
 
 ### Installation
 
@@ -49,4 +47,4 @@ Application tested on Python 3.7. Older versions of Python from 3.1 will likely 
 - Launched Using Flask Framework
 - Added Landline Support
 - Added Carrier Logos & Images
-- Deployed in [Heroku](https://whocalledmee.herokuapp.com)
+- [Deployed Version](https://whocalledme.now.sh)

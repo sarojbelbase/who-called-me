@@ -1,0 +1,11 @@
+{
+	"builds": [ { "src": "app.py", "use": "@now/python" } ],
+	"routes": [
+		{
+			"src": "/(.*)",
+			"dest": "app.py",
+			"trailingSlash": false,
+			"headers": { "cache-control": "public, s-maxage=1, stale-while-revalidate " }
+		}
+	]
+}
