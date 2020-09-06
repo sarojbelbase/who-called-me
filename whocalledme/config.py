@@ -1,12 +1,9 @@
 import os
 
-driver = 'sqlite:///'
-basedir = os.path.abspath(os.path.dirname(__file__))
-database = os.path.join(basedir, 'site.db')
 
 class Configuration:
 
-    SECRET_KEY = '8JNFRER23F38ERF23JERPOPERJER843B7352W'
-    SQLALCHEMY_DATABASE_URI = driver + database
+    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     WHOOSHEE_MIN_STRING_LEN = 2
