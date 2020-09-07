@@ -1,6 +1,6 @@
 ## Who Called Me? 
 
-A flask app that checks the provided number across the carriers of Nepal i.e Ncell, Namaste, UTL, SmartCell, HelloNepal, and a Landline. [ Web Version](https://whocalledme.now.sh)
+A [flask app](https://whocalledme.now.sh) that checks the provided number across the carriers of Nepal i.e Ncell, Namaste, UTL, SmartCell, HelloNepal, and a Landline.
 
 <img src="whocalledme/static/images/hero.png" width="100%" height="auto">
 
@@ -42,3 +42,5 @@ Application tested on Python 3.7. Older versions of Python from 3.1 will likely 
 - Added Landline Support
 - Added Carrier Logos & Images
 - [Deployed Version](https://whocalledme.now.sh)
+
+#### Made with ❤️ in Nepal.
