@@ -1,38 +1,30 @@
 ## Who Called Me? 
 <img src="whocalledme/static/images/hero.png" width="100%" height="auto">
 
-A flask app that checks whether the number is from Ncell, Namaste, UTL, SmartCell, HelloNepal or Landline. [ Web Version](https://whocalledme.now.sh)
+A flask app that checks the provided number across the carriers of Nepal i.e Ncell, Namaste, UTL, SmartCell, HelloNepal, and a Landline. [ Web Version](https://whocalledme.now.sh)
 
 ### Installation
 
 Application tested on Python 3.7. Older versions of Python from 3.1 will likely work as well.
 
-##### Steps:
+#### Steps
 
-- Create a virtual environment
+- Create a virtual environment with `python3 -m venv venv`
 
-`python3 -m venv venv`
+- Change current directory to the root folder `cd whocalledme/`
 
-- Change directory to the root folder
+- Activate virtual environment with `source venv/bin/activate/`
 
-`cd whocalledme/`
+- Install the requirements with `pip3 install -r requirements.txt`
 
-- Install the requirements with pip/pip3
+- Run the program with python3 `python3 app.py`
 
-`pip3 install -r requirements.txt`
+- Go to the following url [http://localhost:5000](http://localhost:5000)
 
-- Run the program with python3
-
-`python3 app.py`
-
-- Go to the following url
-
-[http://localhost:5000](http://localhost:5000)
-
-## TODOS:
+## Roadmap
 
 01. [x] Flask Implementation
-02. [x] SQlite Storage Based
+02. [x] SQlite/Postgres Storage Based
 03. [ ] Truecaller Integration
 04. [x] Rewriting into Python
 05. [ ] Report Spam
