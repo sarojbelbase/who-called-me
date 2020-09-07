@@ -1,7 +1,9 @@
 ## Who Called Me? 
-<img src="whocalledme/static/images/hero.png" width="100%" height="auto">
 
 A flask app that checks the provided number across the carriers of Nepal i.e Ncell, Namaste, UTL, SmartCell, HelloNepal, and a Landline. [ Web Version](https://whocalledme.now.sh)
+
+<img src="whocalledme/static/images/hero.png" width="100%" height="auto">
+
 
 ### Installation
 
@@ -9,17 +11,17 @@ Application tested on Python 3.7. Older versions of Python from 3.1 will likely 
 
 #### Steps
 
-- Create a virtual environment with `python3 -m venv venv`
+- First, create a virtual environment > `python3 -m venv venv`
 
-- Change current directory to the root folder `cd whocalledme/`
+- Change the current directory to the root folder > `cd whocalledme/`
 
-- Activate virtual environment with `source venv/bin/activate/`
+- Activate the virtual environment > `source venv/bin/activate/`
 
-- Install the requirements with `pip3 install -r requirements.txt`
+- Install the requirements with > `pip3 install -r requirements.txt`
 
-- Run the program with python3 `python3 app.py`
+- Run the program with python3 > `python3 app.py`
 
-- Go to the following url [http://localhost:5000](http://localhost:5000)
+- Go to the following url > [http://localhost:5000](http://localhost:5000)
 
 ## Roadmap
 
