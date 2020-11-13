@@ -16,7 +16,7 @@ MarkupSafe==1.1.1
 mccabe==0.6.1
 ply==3.11
 psycopg2-binary==2.8.6
-pycodestyle==2.5.0
+pycodestyle==2.6.0
 pylint==2.6.0
 python-dotenv==0.14.0
 six==1.14.0
