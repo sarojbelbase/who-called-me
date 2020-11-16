@@ -26,4 +26,4 @@ typed-ast==1.4.1
 Werkzeug==1.0.1
 Whoosh==2.7.4
 wrapt==1.12.1
-WTForms==2.3.1
+WTForms==2.3.3
